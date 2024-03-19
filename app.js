@@ -11,6 +11,10 @@ app.use(
   })
 );
 
+app.get("/", () => {
+  return console.log("hello");
+});
+
 const server = http.createServer(app);
 
 server.listen(3000);
